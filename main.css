@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,200i,300,400,700');
+
+body, html{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	text-align: center;
+	font-weight: 700;
+	font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+h2{
+	text-align: center;
+	font-weight: light;
+	font-family: Montserrat;
+	font-weight: 300;
+}
+
+.instructions{
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	font-weight: 200;
+	font-family: Montserrat, sans-serif;
+}
+
+.instructions li{
+	margin-top: 6px;
+}
+
+.score{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 30px;
+	clear: both;
+	overflow: auto;
+}
+
+.score li{
+	font-size: 24px;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.score .s.loss{
+	background-color: #ff9f9f;
+}
+
+.score .s.win{
+	background-color: #aaffaa;
+}
+
+.score li .s{
+	display: block;
+	text-align: center;
+	height: 200px;
+	width: 200px;
+	border: 2px solid #333;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 64px;
+	line-height: 200px;
+}
+
+.score li span{
+	display: block;
+}
+
+.actions{
+	text-align: center;
+	margin-top: 35px;
+}
+
+.actions .reset{
+	padding: 10px 20px; 
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+	font-size: 14px;
+	background-color: #dbedff;
+	border: 1px solid #777;
+	border-bottom: 2px solid #888;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+}
+
+.actions .reset:hover{
+	background-color: #cbedff;
+	border: 1px solid #666;
+	border-bottom: 2px solid #777;	
+}
+
+.keys{
+	display: none;
+}
+
+@media( max-width: 640px ){
+	.keys{
+		display: block;
+	}
+
+	.keys button{
+		font-size: 24px;
+		padding: 10px 20px;
+		border: 1px solid #333;
+		border-bottom: 2px solid #333;
+		margin-bottom: 35px;
+		background-color: #fcdcfc;
+		font-family: Montserrat, sans-serif;
+		font-weight: 700;
+		margin-left: 20px;
+	}
+
+	.score li .s{
+		width: 90%;
+	}
+}

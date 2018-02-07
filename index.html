@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Rock Paper Scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+		<main class="game">
+			
+			<h1>Rock Paper Scissors</h1>
+			<h2>Instructions</h2>
+
+			<ul class="instructions">
+				<li>Press "R", "P", or "S"</li>
+				<li>The computer will randomly guess to attempt to beat you</li>
+				<li>Your wins and the computer wins are tracked below</li>
+			</ul>
+
+			<ul class="score">
+				<li class="score-player">
+					Player <span class='s'></span> <span class="last-choice"></span>
+				</li>
+				<li class="score-computer">
+					Computer <span class='s'></span> <span class="last-choice"></span>
+				</li>
+			</ul>
+
+			<div class="actions">
+				<div class="keys">
+					<button class="r" data-key="r">R</button>
+					<button class="p" data-key="p">P</button>
+					<button class="s" data-key="s">S</button>
+				</div>
+
+				<button class="reset">Reset Score</button>
+			</div>
+		</main>	
+
+        <script src="main.js"></script>
+    </body>
+</html>
